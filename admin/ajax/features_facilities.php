@@ -39,7 +39,7 @@
 
         if(mysqli_num_rows($check_q)==0){
             $q = "DELETE FROM `features` WHERE `id`=?";
-            $res = delete($q, $values, 'i');
+            $res = delete($q,$values,'i');
             echo $res;
         }else{
             echo 'room_added';

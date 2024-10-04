@@ -39,7 +39,7 @@ function get_features(){
     xhr.open("POST", "ajax/features_facilities.php", true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    xhr.onload =function(){
+    xhr.onload = function(){
         document.getElementById('features-data').innerHTML = this.responseText;
     }
 
@@ -51,7 +51,7 @@ function rem_feature(val){
     xhr.open("POST", "ajax/features_facilities.php", true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    xhr.onload =function(){
+    xhr.onload = function(){
         if(this.responseText == 1){
             alert('success','Feature removed!');
             get_features();
